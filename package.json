@@ -1,0 +1,26 @@
+{
+  "name": "mhd-kosice-wallet-backend",
+  "version": "1.0.0",
+  "description": "Backend for Apple Wallet / Google Wallet live timetable card for MHD Košice.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "download:gtfs": "node src/gtfs.js download",
+    "test:departures": "node src/gtfs.js sample"
+  },
+  "keywords": [
+    "gtfs",
+    "mhd",
+    "kosice",
+    "wallet",
+    "backend"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "csv-parse": "^5.1.0",
+    "express": "^4.21.2"
+  }
+}

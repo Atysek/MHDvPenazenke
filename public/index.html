@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MHD Košice Live</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="status-pill" id="statusPill">Pripravujem kartu…</div>
+
+      <main class="wallet-card" id="walletCard">
+        <header class="card-header">
+          <div>
+            <p class="eyebrow">MHD Košice</p>
+            <h1 id="stopName">Načítavam zastávku…</h1>
+          </div>
+          <div class="brand-mark">LIVE</div>
+        </header>
+
+        <section class="meta-row">
+          <div>
+            <span class="label">Zastávka</span>
+            <strong id="stopCode">—</strong>
+          </div>
+          <div>
+            <span class="label">Polohový status</span>
+            <strong id="geoStatus">—</strong>
+          </div>
+        </section>
+
+        <section class="schedule">
+          <div class="schedule-header">
+            <span>Najbližšie odchody</span>
+            <span id="updatedAt">—</span>
+          </div>
+
+          <ul id="departuresList" class="departures-list">
+            <li class="departures-empty">Čakám na údaje…</li>
+          </ul>
+        </section>
+
+        <footer class="card-footer">
+          <button id="locateButton" type="button">Použiť moju polohu</button>
+        </footer>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
